@@ -14,10 +14,10 @@ function exportToExcel() {
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet('Invoice');
 
-    sheet.addRow(['Items', 'Costs']);
-    sheet.addRow(['Bag 1',`$${bag1Value}`]);
-    sheet.addRow(['Bag 2',`$${bag2Value}`]);
-    sheet.addRow(['Bag 3',`$${bag3Value}`]);
+    sheet.addRow(['Items', 'Weight (lbs)']);
+    sheet.addRow(['Bag 1',`${bag1Value}`]);
+    sheet.addRow(['Bag 2',`${bag2Value}`]);
+    sheet.addRow(['Bag 3',`${bag3Value}`]);
     const cal = ((bag1Value+bag2Value+bag3Value)*1.3)+dryingValue+washingValue+paymentsValue+expensesValue
     sheet.addRow(['Sub Total',`$${(cal.toFixed(2))}`]);
     sheet.addRow(['Cleaning Service'])
