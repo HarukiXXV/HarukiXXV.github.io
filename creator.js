@@ -102,7 +102,8 @@ function exportToExcel() {
         const link = document.createElement('a');
 
         link.href = url;
-        link.download = 'generated_excel.xlsx';
+        const date = new Date
+        link.download = `${date}.xlsx`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
