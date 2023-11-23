@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Export</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="./creator.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Export to Excel</h5>
+
+                        <div class="form-group">
+                            <label for="bag1Input">Maleta 1:</label>
+                            <input type="text" class="form-control" id="bag1Input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bag2Input">Maleta 2:</label>
+                            <input type="text" class="form-control" id="bag2Input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bag3Input">Maleta 3:</label>
+                            <input type="text" class="form-control" id="bag3Input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dryingInput">Secado:</label>
+                            <input type="text" class="form-control" id="dryingInput">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="washingInput">Lavado:</label>
+                            <input type="text" class="form-control" id="washingInput">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="paymentsInput">Pago Benja:</label>
+                            <input type="text" class="form-control" id="paymentsInput">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expensesInput">Otros gastos (Laundry):</label>
+                            <input type="text" class="form-control" id="expensesInput">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cleaningCharges">Otros gastos (Limpieza):</label>
+                            <input type="text" class="form-control" id="cleaningCharges">
+                        </div>
+
+
+                        <button class="btn btn-primary" onclick="exportToExcel()">Descargar Excel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+    <script src="exceljs.js"></script>
+    
+</body>
+
+</html>
