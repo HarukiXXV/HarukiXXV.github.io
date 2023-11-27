@@ -23,9 +23,9 @@ function exportToExcel() {
     sheet.addRow(['Cleaning Service'])
     sheet.addRow(['Tuesday',`$50`])
     sheet.addRow(['Thursday',`$50`])
-    sheet.addRow(['Sunday',`$80`])
+    sheet.addRow(['Sunday',`$60`])
     sheet.addRow(['Additional Charges',cleaningCharges])
-    const cleaningChargersTotal = 180+cleaningCharges
+    const cleaningChargersTotal = 160+cleaningCharges
     sheet.addRow(['Sub Total',`$${(cleaningChargersTotal.toFixed(2))}`])
     sheet.addRow(['Total',`$${((cal+cleaningChargersTotal).toFixed(2))}`])
 
